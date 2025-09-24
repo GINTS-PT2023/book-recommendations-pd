@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Grāmatu Vērtēšana</h1>
+
+    <div class="form">
+      <form action="">
+        <div>
+          <label for="fname">Vārds</label>
+          <input type="text" name="fname" id="fname" />
+        </div>
+        <div>
+          <label for="lname">Uzvārds</label>
+          <input type="text" name="lname" id="lname" />
+        </div>
+        <div>
+          <label for="level">Līmenis</label>
+          <select name="level" id="level">
+            <option value="1">Nelasāma</option>
+            <option value="2">Slikta</option>
+            <option value="3">Viduvēja</option>
+            <option value="4">Laba</option>
+            <option value="5">Lieliska</option>
+          </select>
+        </div>
+        <div>
+          <label for="title">Nosaukums</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div>
+          <label for="description">Apraksts</label>
+          <textarea name="description" id="descritpion"></textarea>
+        </div>
+        <div class="submit-input">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
