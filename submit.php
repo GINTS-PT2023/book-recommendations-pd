@@ -44,6 +44,7 @@ echo ("Data Successfully Sent!" . "<br /> \n");
 <body>
 
     <a href="/">Home</a>
+    <a href="/list.php">Book List</a>
 
 </body>
 

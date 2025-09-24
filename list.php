@@ -17,7 +17,25 @@
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "id: " . $row["id"] . " - Name: " . $row["full_name"] . " " . $row["book_title"] . "<br>";
+            echo "<ul>";
+            echo "ID: " . $row['id'];
+            echo "<li>" . $row['full_name'] . "</li>";
+            echo "<li>" . $row['book_title'] . "</li>";
+            echo "<li>" . $row['review_text'] . "</li>";
+            echo "<li>" . $row['rating'] . "</li>";
+            echo "</ul>";
+
+            // es nezinu, kapēc šis nestrādāja ?!
+            //  $fb -> $fname
+
+            // $fb = new Review($row['full_name'], $row['book_title'], $row['review_text'], $row['rating']);
+            // echo "<ul>";
+            // echo "ID: " . $row['id'];
+            // echo "<li>" . $fb->$fname . "</li>";
+            // echo "<li>" . $fb->$title . "</li>";
+            // echo "<li>" . $fb->$review . "</li>";
+            // echo "<li>" . $fb->$rating . "</li>";
+            // echo "</ul>";
         }
     } else {
         echo "0 results";
@@ -35,6 +53,8 @@
  </head>
 
  <body>
+
+
 
      <a href="/">Home</a>
 
