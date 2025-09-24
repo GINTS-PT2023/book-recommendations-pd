@@ -12,16 +12,21 @@
     <div class="form">
       <form action="submit.php" method="POST">
         <div>
-          <label for="fname">Vārds</label>
-          <input type="text" name="fname" id="fname" />
+          <label for="full_name">Vārds</label>
+          <input type="text" name="full_name" id="full_name" />
         </div>
         <div>
-          <label for="lname">Uzvārds</label>
-          <input type="text" name="lname" id="lname" />
+          <label for="last_name">Uzvārds</label>
+          <input type="text" name="last_name" id="last_name" />
         </div>
         <div>
-          <label for="level">Līmenis</label>
-          <select name="level" id="level">
+          <label for="Email">Ē-pasts</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="rating">Līmenis</label>
+
+          <select name="rating" id="rating">
             <option value="1">Nelasāma</option>
             <option value="2">Slikta</option>
             <option value="3">Viduvēja</option>
@@ -30,18 +35,20 @@
           </select>
         </div>
         <div>
-          <label for="title">Nosaukums</label>
-          <input type="text" name="title" id="title" />
+          <label for="book_title">Nosaukums</label>
+          <input type="text" name="book_title" id="book_title" />
         </div>
         <div>
-          <label for="description">Apraksts</label>
-          <textarea name="description" id="descritpion"></textarea>
+          <label for="review_text">Apraksts</label>
+          <textarea name="review_text" id="review_text"></textarea>
         </div>
         <div class="submit-input">
           <input type="submit" />
         </div>
       </form>
     </div>
+
+    <a href="/list.php">Book List</a>
 
     <script src="script.js"></script>
   </body>
